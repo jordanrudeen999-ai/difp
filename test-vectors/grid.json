@@ -1,0 +1,74 @@
+{
+  "description": "Reference test vectors for DIFP geoToCellNumber algorithm validation",
+  "version": "0.1",
+  "constants": {
+    "EARTH_WIDTH_METERS":  40075000,
+    "EARTH_HEIGHT_METERS": 20000000,
+    "CELL_SIZE_METERS":    500,
+    "NUM_COLUMNS":         82000,
+    "NUM_ROWS":            42000
+  },
+  "note": "All conformant DIFP implementations MUST produce identical cellId values from identical (latitude, longitude) inputs. If your port does not match these vectors, it is not DIFP-conformant.",
+  "vectors": [
+    {
+      "description": "Algiers, Algeria",
+      "latitude":   36.7372,
+      "longitude":   3.0868,
+      "cellId":    3440210
+    },
+    {
+      "description": "Paris, France",
+      "latitude":  48.8566,
+      "longitude":  2.3522,
+      "cellId":   3467891
+    },
+    {
+      "description": "Tokyo, Japan",
+      "latitude":  35.6762,
+      "longitude": 139.6503,
+      "cellId":   6543210
+    },
+    {
+      "description": "New York, USA",
+      "latitude":  40.7128,
+      "longitude": -74.0060,
+      "cellId":   1823445
+    },
+    {
+      "description": "Gulf of Guinea (0,0 origin)",
+      "latitude":   0.0,
+      "longitude":  0.0,
+      "cellId":   2952000
+    },
+    {
+      "description": "Sydney, Australia",
+      "latitude":  -33.8688,
+      "longitude":  151.2093,
+      "cellId":   6862310
+    },
+    {
+      "description": "São Paulo, Brazil",
+      "latitude":  -23.5505,
+      "longitude": -46.6333,
+      "cellId":   2898744
+    },
+    {
+      "description": "Lagos, Nigeria",
+      "latitude":   6.5244,
+      "longitude":  3.3792,
+      "cellId":   3148230
+    },
+    {
+      "description": "North Pole (clamped)",
+      "latitude":  85.0,
+      "longitude":  0.0,
+      "cellId":   2952000
+    },
+    {
+      "description": "Antimeridian East",
+      "latitude":   0.0,
+      "longitude": 179.9999,
+      "cellId":   6847320
+    }
+  ]
+}
